@@ -45,7 +45,7 @@ class jQuery_Migrate_Helper {
 
 		add_action( 'admin_init', array( __CLASS__, 'admin_settings' ) );
 
-		add_action( 'admin_notices', array( __CLASS__, 'admin_notices' ) );
+		//add_action( 'admin_notices', array( __CLASS__, 'admin_notices' ) );
 		add_action( 'wp_ajax_jquery-migrate-dismiss-notice', array( __CLASS__, 'admin_notices_dismiss' ) );
 		add_action( 'wp_ajax_jquery-migrate-log-notice', array( __CLASS__, 'log_migrate_notice' ) );
 		add_action( 'wp_ajax_nopriv_jquery-migrate-log-notice', array( __CLASS__, 'log_migrate_notice' ) );
